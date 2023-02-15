@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bethel Expense Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Bethel Expense Calculator</h1>
+    <form class="add">
+      <label for="amount">Amount:</label>
+      <input type="number" name="amount" step="0.01" required />
+      <label for="name">Name:</label>
+      <select name="name" id="name">
+        <option value="matt">Matt</option>
+        <option value="jess">Jess</option>
+      </select>
+
+      <button>Add a new expense</button>
+    </form>
+    <br />
+    <div class="items"></div>
+    <form class="delete">
+      <label for="id">Expense id:</label>
+      <input type="text" name="id" required />
+
+      <button>Delete an expense</button>
+    </form>
+    <br />
+    <form class="update">
+      <label for="id">Expense id:</label>
+      <input type="text" name="id" required />
+
+      <button>Update an expense</button>
+    </form>
+    <h2>Authentication</h2>
+    <form class="signup">
+      <label for="email">Email:</label>
+      <input type="email" name="email" id="email" />
+      <label for="password">Password:</label>
+      <input type="password" name="password" id="password" />
+      <button>Sign Up</button>
+    </form>
+
+    <h2>Login</h2>
+    <form class="login">
+      <label for="email">Email:</label>
+      <input type="email" name="email" />
+      <label for="password">Password:</label>
+      <input type="password" name="password" />
+      <button>Login</button>
+    </form>
+    <br />
+    <button class="logout">Logout</button>
+    <br />
+    <h2>Unsubscribe</h2>
+    <button class="unsub">Unsubscribe from db/auth changes</button>
+    <script src="bundle.js"></script>
+  </body>
+</html>
